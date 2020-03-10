@@ -1,0 +1,28 @@
+{
+    "name": "slairmy\/weather",
+    "description": "A weather SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "slairmy",
+            "email": "slairmy@163.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.5",
+        "phpunit/phpunit": "^9.0",
+        "mockery/mockery": "^1.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Slairmy\\Weather\\": "./src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Slairmy\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
